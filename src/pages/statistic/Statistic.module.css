@@ -1,0 +1,30 @@
+.container {
+    padding: 28px 0 48px;
+    min-height: calc(100vh - 200px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 50px;
+}
+
+table {
+    width: 70%;
+    text-align: center;
+    background-color: #faedeb;
+}
+
+tr {
+    border-bottom: 2px solid #c95039;
+}
+
+td, th {
+    padding: 10px 20px;
+}
+
+thead, tfoot {
+    background-color: #e9b9af;
+}
+
+.row_name {
+    text-align: left;
+}

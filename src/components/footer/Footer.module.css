@@ -1,0 +1,41 @@
+.container {
+  font-size: 18px;
+  font-weight: 500;
+  width: 100%;
+}
+.wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1152px;
+  margin: 0 auto;
+  padding: 20px 15px;
+}
+.developers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.developers li {
+  margin: 0 50px;
+}
+.container a:hover {
+  transition: 0.5s;
+  color: #f7f7f7;
+}
+.img {
+  background-image: url(../../assets/logoRS.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100px;
+  height: 50px;
+}
+@media (max-width: 1024px) {
+  .developers {
+    flex-direction: column;
+  }
+  .developers a {
+    font-size: 18px;
+  }
+}

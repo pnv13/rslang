@@ -1,0 +1,200 @@
+.cards {
+  display: flex;
+  column-gap: 50px;
+  row-gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.container {
+  width: 460px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 25px;
+  box-shadow: 0 1px 2px 1px rgb(0 0 0 / 30%), 0 2px 4px 1px rgb(0 0 0 / 25%), 0 2px 8px 2px rgb(0 0 0 / 20%), 0 4px 16px 4px rgb(0 0 0 / 15%);
+  z-index: 1;
+}
+
+.games_links {
+  position: fixed;
+  top: 15%;
+  right: 20%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 60px;
+}
+
+.game_link {
+  position: relative;
+  width: 5rem;
+  height: 5rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.game_link .tooltip {
+  top: 90px;
+  left: -100%;
+}
+
+.game_link:hover {
+  cursor: pointer;
+  border: 2px solid #C95039;
+}
+
+.game_link:hover .tooltip {
+  visibility: visible;
+}
+
+.audioGame_link {
+  background-image: url("../../assets/audioGame.webp");
+}
+
+.sprintGame_link {
+  background-image: url("../../assets/sprintGame.webp");
+}
+
+.header {
+  height: 260px;
+  width: 100%;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.overlay {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  width: 100%;
+  height: 100%;
+  padding: 20px 20px 10px;
+  box-sizing: border-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-end;
+  align-items: flex-end;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.marks {
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 20px;
+}
+
+.mark_difficult {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  color: white;
+  background-color: #737373;
+  border-radius: 50%;
+}
+
+.tooltip {
+  visibility: hidden;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  z-index: 1;
+  width: 250px;
+  background-color: #737373;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  font-size: 1rem;
+}
+
+.mark_difficult:hover {
+  cursor: pointer;
+  color: gold;
+}
+
+.mark_difficult:hover .tooltip {
+  visibility: visible;
+}
+
+.word {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  -webkit-align-items: flex-end;
+}
+
+.primary {
+  display: flex;
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.translate_block {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.translate_block span {
+  display: block;
+  margin-right: 15px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 15px 20px;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+
+}
+
+.word_block {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  box-shadow: 0 20px 0 -19px #333;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.word_block:nth-child(2) {
+  box-shadow: none;
+  margin-bottom: 0;
+}
+.word_example {
+  margin-top: 5px;
+  font-style: italic;
+}
+.btn {
+  background-image: url(../../assets/volume.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  transition: 0.5s;
+}

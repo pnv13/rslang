@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Script&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1152px;
+  margin: 0 auto;
+  padding: 0 15px;
+  height: 100%;
+}
+body {
+  background-color: #f7f7f7;
+  font-family: 'Montserrat', sans-serif;
+}
+.play-btn.active {
+  background-image: url(./assets/pause.png);
+}
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+.card-container-level1 {
+  background-color: rgb(191, 219, 254);
+}
+
+.card-container-level2 {
+  background-color: rgb(96, 165, 250);
+}
+
+.card-container-level3 {
+  background-color: rgb(167, 139, 250);
+}
+
+.card-container-level4 {
+  background-color: rgb(124, 58, 237);
+  color: white;
+}
+
+.card-container-level5 {
+  background-color: rgb(253, 164, 175);
+}
+
+.card-container-level6 {
+  background-color: rgb(251, 113, 133);
+}
+
+.card-overlay-level1 {
+  background: linear-gradient(transparent 30%, rgb(191, 219, 254));
+}
+
+.card-overlay-level2 {
+  background: linear-gradient(transparent 30%, rgb(96, 165, 250));
+}
+
+.card-overlay-level3 {
+  background: linear-gradient(transparent 30%, rgb(167, 139, 250));
+}
+
+.card-overlay-level4 {
+  background: linear-gradient(transparent 30%, rgb(124, 58, 237));
+}
+
+.card-overlay-level5 {
+  background: linear-gradient(transparent 30%, rgb(253, 164, 175));
+}
+
+.card-overlay-level6 {
+  background: linear-gradient(transparent 30%, rgb(251, 113, 133));
+}
+
+div.active-dot {
+  background-color: #059900;
+  border: 1px solid #059900;
+}
+#levelsPopup.close-popup {
+  display: none;
+}
